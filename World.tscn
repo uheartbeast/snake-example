@@ -26,5 +26,5 @@ position = Vector2( 448, 320 )
 position = Vector2( 256, 480 )
 
 [node name="Apple3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 160, 160 )
+position = Vector2( 448, 320 )
 
