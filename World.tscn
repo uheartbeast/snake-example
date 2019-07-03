@@ -20,11 +20,10 @@ valign = 1
 position = Vector2( 288, 320 )
 
 [node name="Apple" parent="." instance=ExtResource( 2 )]
-position = Vector2( 448, 320 )
+position = Vector2( 480, 192 )
 
 [node name="Apple2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 256, 480 )
 
 [node name="Apple3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 448, 320 )
-
+position = Vector2( 160, 128 )

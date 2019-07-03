@@ -1,18 +1,17 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Apple.gd" type="Script" id=1]
+[ext_resource path="res://Apple.png" type="Texture" id=2]
 
 [node name="Apple" type="Node2D" groups=[
 "Apples",
 ]]
-position = Vector2( 320, 288 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="ColorRect" parent="."]
-margin_right = 32.0
-margin_bottom = 32.0
-color = Color( 0.866667, 0.32549, 0.32549, 1 )
-
+[node name="Apple" type="Sprite" parent="."]
+scale = Vector2( 4, 4 )
+texture = ExtResource( 2 )
+centered = false

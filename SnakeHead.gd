@@ -5,13 +5,18 @@ const Segment = preload("res://SnakeSegment.tscn")
 
 var tail_position = Vector2()
 var tail = self
-var direction = Vector2.RIGHT
+var direction = Vector2.RIGHT setget set_direction
 var speed = 0.5 setget set_speed
 var score = 0 setget set_score
 
+onready var sprite = $Sprite
 onready var timer = $Timer
 onready var segments = $Segments
 onready var scoreLabel = get_parent().get_node("UI/ScoreLabel")
+
+func set_direction(value):
+	direction = value
+	sprite.rotation = value.angle()
 
 func set_speed(value):
 	speed = value
